@@ -1,0 +1,23 @@
+{
+  "item.testmod.zircon": "Zircon",
+  "item.testmod.raw_zircon": "Raw Zircon",
+  "item.testmod.eight_ball": "Eight Ball",
+  "item.testmod.mejoberry": "Mejoberry",
+  "item.testmod.mejoberry_seeds": "mejoberry_seeds",
+
+  "block.testmod.zircon_block": "Block of Zircon",
+  "block.testmod.zircon_ore": "Zircon Ore",
+  "block.testmod.deepslate_zircon_ore": "Deepslate Zircon Ore",
+  "block.testmod.jumpy_block": "Jumpy Block",
+  "block.testmod.zircon_lamp": "Zircon Lamp",
+  "block.testmod.blueberry_crop": "Blueberry Crop",
+  "block.testmod.redwood_log": "Redwood Log",
+  "block.testmod.redwood_wood": "Redwood Wood",
+  "block.testmod.stripped_redwood_log": "Stripped Redwood Log",
+  "block.testmod.stripped_redwood_wood": "Stripped Redwood Wood",
+  "block.testmod.redwood_sapling": "Redwood Sapling",
+  "block.testmod.redwood_leaves": "Redwood Leaves",
+
+  "itemGroup.testModTab": "Test Mod",
+  "entity.minecraft.villager.testmod.jumpy_master": "Jumpy Master"
+}
