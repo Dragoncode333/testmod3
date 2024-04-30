@@ -19,8 +19,9 @@ public class ZirconLampBlock extends Block {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public ActionResultType onBlockActivated(BlockState blockState, World world, BlockPos blockPos,
-                                PlayerEntity playerEntity, Hand hand, BlockRayTraceResult blockRayTraceResult) {
+                                              PlayerEntity playerEntity, Hand hand, BlockRayTraceResult blockRayTraceResult) {
         if(!world.isRemote() && hand == Hand.MAIN_HAND) {
             world.setBlockState(blockPos, blockState.cycleValue(LIT), 3);
         }

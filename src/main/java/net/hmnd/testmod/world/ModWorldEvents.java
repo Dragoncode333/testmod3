@@ -1,8 +1,8 @@
 package net.hmnd.testmod.world;
 
 import net.hmnd.testmod.TestMod;
-import net.hamnd.testmod.world.gen.ModOreGeneration;
-import net.hamnd.testmod.world.gen.ModTreeGeneration;
+import net.hmnd.testmod.world.gen.ModOreGeneration;
+import net.hmnd.testmod.world.gen.ModTreeGeneration;
 import net.minecraftforge.event.world.BiomeLoadingEvent;
 import net.minecraftforge.eventbus.api.SubscribeEvent;
 import net.minecraftforge.fml.common.Mod;

@@ -14,8 +14,7 @@ import net.minecraft.util.math.BlockRayTraceResult;
 import net.minecraft.util.text.StringTextComponent;
 import net.minecraft.world.World;
 
-import java.awt.*;
-
+@SuppressWarnings("ALL")
 public class JumpyBlock extends Block {
 
     public JumpyBlock(Properties properties) {
@@ -23,11 +22,12 @@ public class JumpyBlock extends Block {
     }
 
     @Override
+    @SuppressWarnings("deprecation")
     public ActionResultType onBlockActivated(BlockState blockState, World world, BlockPos blockPos, PlayerEntity playerEntity, Hand hand, BlockRayTraceResult blockRayTraceResult) {
         // Server: Main hand & Off hand
         // Client: Main hand & Off hand
         if(!world.isRemote() && hand == Hand.MAIN_HAND) {
-            playerEntity.sendMessage(new StringTextComponent("Right clicked this !"), playerEntity.getUUID());
+            playerEntity.sendMessage(new StringTextComponent("Right clicked this !"), playerEntity.getUniqueID());
         }
         return super.onBlockActivated(blockState, world, blockPos, playerEntity, hand, blockRayTraceResult);
     }

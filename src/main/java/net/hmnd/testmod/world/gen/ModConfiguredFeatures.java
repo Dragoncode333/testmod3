@@ -1,7 +1,6 @@
 package net.hmnd.testmod.world.gen;
 
 import net.hmnd.testmod.block.ModBlocks;
-import net.minecraft.block.Blocks;
 import net.minecraft.util.registry.Registry;
 import net.minecraft.util.registry.WorldGenRegistries;
 import net.minecraft.world.gen.blockstateprovider.SimpleBlockStateProvider;
@@ -20,7 +19,7 @@ public class ModConfiguredFeatures {
 
     private static <FC extends IFeatureConfig> ConfiguredFeature<FC, ?> register(String string,
                                                                                  ConfiguredFeature<FC, ?> configuredFeature) {
-        return (ConfiguredFeature) Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, string, configuredFeature);
+        return Registry.register(WorldGenRegistries.CONFIGURED_FEATURE, string, configuredFeature);
     }
 
 }

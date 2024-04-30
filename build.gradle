@@ -172,3 +172,13 @@ publishing {
         }
     }
 }
+
+allprojects {
+    gradle.projectsEvaluated {
+        tasks.withType(JavaCompile).tap {
+            configureEach {
+                options.compilerArgs.add("-Xlint:deprecation")
+            }
+        }
+    }
+}
